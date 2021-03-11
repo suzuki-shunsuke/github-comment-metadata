@@ -13,7 +13,7 @@ func Extract(body string, data interface{}) (bool, error) {
 		if !strings.HasSuffix(line, embeddedCommentSuffix) {
 			continue
 		}
-		if err := json.Unmarshal([]byte(line[lenEmbeddedCommentPrefix:len(line)-lenEmbeddedCommentSuffix]), &data); err != nil {
+		if err := json.Unmarshal([]byte(line[lenEmbeddedCommentPrefix:len(line)-lenEmbeddedCommentSuffix]), data); err != nil {
 			continue
 		}
 		return true, nil
