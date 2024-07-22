@@ -31,31 +31,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/goreleaser/goreleaser/v2.1.0/goreleaser_Darwin_all.tar.gz",
-      "checksum": "2EFAC3DE488641DCEAE3D35142EC942FA023436BA3C9F2722C5D13A3442E821A",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/goreleaser/goreleaser/v2.1.0/goreleaser_Linux_arm64.tar.gz",
-      "checksum": "FA1909B263B79B18A4B5EEBA4710E59A023A0801F1AEB7317C5662511F69D851",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/goreleaser/goreleaser/v2.1.0/goreleaser_Linux_x86_64.tar.gz",
-      "checksum": "4D4FB316ACB3F5DFD45C7CD426F6120F8A294CB752D6CFF46AD9B771F22F6F0D",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/goreleaser/goreleaser/v2.1.0/goreleaser_Windows_arm64.zip",
-      "checksum": "17D1D8F8F7AB579A43F3732304D2D9F6DDC67150D766AD03C484BB5F4941FB5E",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/goreleaser/goreleaser/v2.1.0/goreleaser_Windows_x86_64.zip",
-      "checksum": "FE4481B875F7A095EE16F15CDD7C4547E210E1298D1220FE55CF684A0DEBB089",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/int128/ghcp/v1.13.3/ghcp_darwin_amd64.zip",
       "checksum": "65F82572A1F280E2D83EEA4505436646642153F2F709B0839729CF3272A85F8B",
       "algorithm": "sha256"
@@ -213,6 +188,21 @@
     {
       "id": "github_release/github.com/suzuki-shunsuke/ghalint/v0.2.12/ghalint_0.2.12_windows_arm64.tar.gz",
       "checksum": "F193F518507FD6E88494D0760B9EBEBF640EC21D5B10787436462AFE30B9A661",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/codeclimate.com/downloads/test-reporter/test-reporter-0.11.1-darwin-amd64",
+      "checksum": "B8EF5A44BDDC25EF8A0A80BEB8DE9C050CBCC464078A6EA1E50CF0DFA40EEC46",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/codeclimate.com/downloads/test-reporter/test-reporter-0.11.1-linux-amd64",
+      "checksum": "9DEEFD996DF0F6D1C9FB79405B396EB91A7ACA35ACCB8969755FCAA668DA4DAD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/codeclimate.com/downloads/test-reporter/test-reporter-0.11.1-linux-arm64",
+      "checksum": "6FAAD38A2299895C6847F6906B196A1BA16DB7BB2AC8029780EF441BAFEC29C9",
       "algorithm": "sha256"
     },
     {
