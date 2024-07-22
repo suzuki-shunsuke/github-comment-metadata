@@ -1,10 +1,8 @@
 ---
 name: test
 on:
-  push:
-    branches: [master]
   pull_request:
-    branches: [master]
+    branches: [main]
 jobs:
   build:
     timeout-minutes: 30
@@ -13,14 +11,14 @@ jobs:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
       - uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568 # v3
         with:
-          go-version: '1.16.0'
+          go-version: '1.22.5'
       - run: go mod download
       - name: test
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         run: |
           bash ci/test.sh github-comment-metadata
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@3a919529898de77ec3da873e3063ca4b10e7f5cc # v3
+      - uses: aquaproj/aqua-installer@v3.0.1
         with:
-          version: v1.33
+          aqua_version: v2.30.0
+      - run: golangci-lint run

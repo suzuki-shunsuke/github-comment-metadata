@@ -1,6 +1,6 @@
 package metadata
 
-func SetCIEnv(ci string, getEnv func(string) string, data map[string]interface{}) error { //nolint:unparam
+func SetCIEnv(ci string, getEnv func(string) string, data map[string]interface{}) error {
 	switch ci {
 	case "circleci":
 		data["JobName"] = getEnv("CIRCLE_JOB")
