@@ -8,10 +8,9 @@ linters:
     - lll
     - godot
     - godox
-    - gomnd # WARN The linter 'gomnd' is deprecated (since v1.58.0) due to: The linter has been renamed. Replaced by mnd.
-    - execinquery # WARN The linter 'execinquery' is deprecated (since v1.58.0) due to: The repository of the linter has been archived by the owner.  
     - varnamelen
     - exhaustruct
     - depguard
-    # WARN [linters_context] copyloopvar: this linter is disabled because the Go version (1.19) of your project is lower than Go 1.22 
-    # WARN [linters_context] intrange: this linter is disabled because the Go version (1.19) of your project is lower than Go 1.22
+    - copyloopvar # WARN [linters_context] copyloopvar: this linter is disabled because the Go version (1.19) of your project is lower than Go 1.22 
+    - intrange # WARN [linters_context] intrange: this linter is disabled because the Go version (1.19) of your project is lower than Go 1.22
+    - tenv # WARN The linter 'tenv' is deprecated (since v1.64.0) due to: Duplicate feature in another linter. Replaced by usetesting. 
