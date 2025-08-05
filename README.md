@@ -1,9 +1,6 @@
 # github-comment-metadata
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/suzuki-shunsuke/github-comment-metadata.svg)](https://pkg.go.dev/github.com/suzuki-shunsuke/github-comment-metadata)
-[![Build Status](https://github.com/suzuki-shunsuke/github-comment-metadata/workflows/test/badge.svg)](https://github.com/suzuki-shunsuke/github-comment-metadata/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a9905b9695310b7b35af/test_coverage)](https://codeclimate.com/github/suzuki-shunsuke/github-comment-metadata/test_coverage)
-[![Go Report Card](https://goreportcard.com/badge/github.com/suzuki-shunsuke/github-comment-metadata)](https://goreportcard.com/report/github.com/suzuki-shunsuke/github-comment-metadata)
 [![GitHub last commit](https://img.shields.io/github/last-commit/suzuki-shunsuke/github-comment-metadata.svg)](https://github.com/suzuki-shunsuke/github-comment-metadata)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/suzuki-shunsuke/github-comment-metadata/master/LICENSE)
 
