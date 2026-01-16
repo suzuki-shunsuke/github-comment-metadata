@@ -12,11 +12,11 @@ Parser of metadata [github-comment](https://github.com/suzuki-shunsuke/github-co
 github-comment is a CLI tool to post a comment to GitHub commit, issue and pull request.
 From v3, github-comment embeds metadata into comment to support hide comment.
 
-* [github-comment hide](https://github.com/suzuki-shunsuke/github-comment#hide)
-* [github-comment#210](https://github.com/suzuki-shunsuke/github-comment/pull/210)
+- [github-comment hide](https://github.com/suzuki-shunsuke/github-comment#hide)
+- [github-comment#210](https://github.com/suzuki-shunsuke/github-comment/pull/210)
 
 In addition to github-comment, we develop [tfcmt](https://github.com/suzuki-shunsuke/tfcmt), which is a fork of [mercari/tfnotify](https://github.com/mercari/tfnotify) and post a comment like github-comment.
-To embed metadata into comment via tfcmt like github-comment, we decide to release this feature as a library and use this in github-comment and tfcmt.
+To embed metadata into comment via tfcmt like github-comment, we decided to separate this feature as a library and share this with github-comment and tfcmt.
 
 ## metadata format
 
@@ -24,7 +24,7 @@ To embed metadata into comment via tfcmt like github-comment, we decide to relea
 <!-- github-comment: JSON object -->
 ```
 
-ex.
+e.g.
 
 ```
 <!-- github-comment: {"JobID":"xxx","JobName":"plan","SHA1":"79acc0778da6660712a65fd41a48b72cb7ad16c0","TemplateKey":"default","Vars":{}} -->
