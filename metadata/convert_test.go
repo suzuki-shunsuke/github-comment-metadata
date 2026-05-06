@@ -10,7 +10,7 @@ func TestConvert(t *testing.T) {
 	t.Parallel()
 	data := []struct {
 		caseName string
-		data     interface{}
+		data     any
 		exp      string
 		isErr    bool
 	}{
@@ -22,7 +22,6 @@ func TestConvert(t *testing.T) {
 		},
 	}
 	for _, d := range data {
-		d := d
 		t.Run(d.caseName, func(t *testing.T) {
 			t.Parallel()
 			f, err := metadata.Convert(d.data)

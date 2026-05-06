@@ -13,7 +13,7 @@ func TestSetCIData(t *testing.T) { //nolint:funlen
 		caseName string
 		ci       string
 		env      map[string]string
-		exp      map[string]interface{}
+		exp      map[string]any
 		isErr    bool
 	}{
 		{
@@ -23,7 +23,7 @@ func TestSetCIData(t *testing.T) { //nolint:funlen
 				"CIRCLE_JOB":             "build",
 				"CIRCLE_WORKFLOW_JOB_ID": "xxx",
 			},
-			exp: map[string]interface{}{
+			exp: map[string]any{
 				"JobName": "build",
 				"JobID":   "xxx",
 			},
@@ -35,7 +35,7 @@ func TestSetCIData(t *testing.T) { //nolint:funlen
 				"DRONE_STATE_NAME": "build",
 				"DRONE_STEP_NAME":  "checkout",
 			},
-			exp: map[string]interface{}{
+			exp: map[string]any{
 				"WorkflowName": "build",
 				"JobName":      "checkout",
 			},
@@ -47,7 +47,7 @@ func TestSetCIData(t *testing.T) { //nolint:funlen
 				"GITHUB_WORKFLOW": "build",
 				"GITHUB_JOB":      "checkout",
 			},
-			exp: map[string]interface{}{
+			exp: map[string]any{
 				"WorkflowName": "build",
 				"JobName":      "checkout",
 			},
@@ -58,16 +58,15 @@ func TestSetCIData(t *testing.T) { //nolint:funlen
 			env: map[string]string{
 				"CODEBUILD_BUILD_ID": "zzz",
 			},
-			exp: map[string]interface{}{
+			exp: map[string]any{
 				"JobID": "zzz",
 			},
 		},
 	}
 	for _, d := range data {
-		d := d
 		t.Run(d.caseName, func(t *testing.T) {
 			t.Parallel()
-			data := map[string]interface{}{}
+			data := map[string]any{}
 			err := metadata.SetCIEnv(d.ci, func(key string) string {
 				return d.env[key]
 			}, data)

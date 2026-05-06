@@ -12,7 +12,7 @@ const (
 	lenEmbeddedCommentSuffix = len(embeddedCommentSuffix)
 )
 
-func Convert(data interface{}) (string, error) {
+func Convert(data any) (string, error) {
 	b, err := json.Marshal(data)
 	if err != nil {
 		return "", fmt.Errorf("marshal an embedded metadata to JSON: %w", err)
