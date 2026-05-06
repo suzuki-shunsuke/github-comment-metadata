@@ -5,8 +5,8 @@ import (
 	"strings"
 )
 
-func Extract(body string, data interface{}) (bool, error) {
-	for _, line := range strings.Split(body, "\n") {
+func Extract(body string, data any) (bool, error) {
+	for line := range strings.SplitSeq(body, "\n") {
 		if !strings.HasPrefix(line, embeddedCommentPrefix) {
 			continue
 		}

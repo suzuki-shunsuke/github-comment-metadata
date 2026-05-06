@@ -12,8 +12,8 @@ func TestExtract(t *testing.T) {
 	data := []struct {
 		caseName string
 		body     string
-		data     interface{}
-		exp      interface{}
+		data     any
+		exp      any
 		expB     bool
 		isErr    bool
 	}{
@@ -31,7 +31,6 @@ func TestExtract(t *testing.T) {
 		},
 	}
 	for _, d := range data {
-		d := d
 		t.Run(d.caseName, func(t *testing.T) {
 			t.Parallel()
 			f, err := metadata.Extract(d.body, d.data)
