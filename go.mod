@@ -1,3 +1,3 @@
 module github.com/suzuki-shunsuke/github-comment-metadata
 
-go 1.19
+go 1.25
